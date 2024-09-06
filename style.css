@@ -1,0 +1,128 @@
+:root {
+    /* colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    /* font-weight */
+    --regular: 400;
+    --medium: 600;
+    --bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--grey900);
+}
+
+.wrapper {
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey800);
+    border-radius: 10px;
+    height: auto;
+    width: fit-content;
+    min-height: fit-content;
+    min-width: 350px;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.card img {
+    height: 5rem;
+    border-radius: 50%;
+
+}
+
+.card__content {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__content .name {
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+}
+
+.card__content .location {
+    font-size: .75rem;
+    font-weight: var(--medium);
+    color: var(--green);
+    line-height: 200%;
+}
+
+.card__title {
+    font-size: .75rem;
+    font-weight: var(--regular);
+    color: var(--white);
+}
+
+.card .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .75rem;
+
+}
+
+.card button {
+    padding: .75rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--grey700);
+    font-weight: var(--medium);
+    color: var(--white);
+}
+
+.card button:hover {
+    background-color: var(--green);
+    color: var(--grey900);
+    font-weight: var(--medium);
+}
+
+.card button:active {
+    background-color: var(--green);
+    color: var(--grey900);
+    font-weight: var(--medium);
+}
+
+.attribution {
+    color: var(--white);
+    padding: 1rem;
+    font-size: 11px;
+    text-align: center;
+    font-weight: var(--bold);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
