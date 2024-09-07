@@ -46,12 +46,12 @@ body {
     align-items: center;
     background-color: var(--grey800);
     border-radius: 10px;
-    height: auto;
+    height: fit-content;
     width: fit-content;
-    min-height: fit-content;
-    min-width: 350px;
+    min-height: 600px;
+    min-width: 400px;
     padding: 2rem;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .card img {
@@ -69,19 +69,19 @@ body {
 }
 
 .card__content .name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: var(--bold);
 }
 
 .card__content .location {
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: var(--medium);
     color: var(--green);
     line-height: 200%;
 }
 
 .card__title {
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: var(--regular);
     color: var(--white);
 }
@@ -90,14 +90,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: .75rem;
+    gap: 1rem;
 
 }
 
 .card button {
-    padding: .75rem 0;
+    padding: 1rem 0;
     border: none;
-    border-radius: 5px;
+    border-radius: .5rem;
     background-color: var(--grey700);
     font-weight: var(--medium);
     color: var(--white);
@@ -106,13 +106,13 @@ body {
 .card button:hover {
     background-color: var(--green);
     color: var(--grey900);
-    font-weight: var(--medium);
+    font-weight: var(--bold);
 }
 
 .card button:active {
     background-color: var(--green);
     color: var(--grey900);
-    font-weight: var(--medium);
+    font-weight: var(--bold);
 }
 
 .attribution {
